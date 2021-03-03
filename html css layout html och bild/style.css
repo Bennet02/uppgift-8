@@ -1,0 +1,56 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas:
+    "h h"
+    "a a"
+    "s s"
+    "f f"
+}
+
+@media screen and (min-width: 200px) {
+  body {
+    grid-template-areas:
+      "h h"
+      "s a"
+      "f f"
+  }
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", Verdana, Arial, sans-serif;
+}
+
+article, aside, footer, nav {
+  border-radius: 15px;
+  padding: 1%;
+}
+
+p {
+  color: green;
+}
+
+body {
+  background-color: whiteSmoke;
+}
+
+header {
+  background-color: palegreen;
+  grid-area: h
+}
+
+section {
+  background-color: wheat;
+  grid-area: s
+}
+
+aside {
+  background-color: paleturquoise;
+  grid-area: a
+}
+
+footer {
+  background-color: whiteSmoke;
+  grid-area: f
+}
